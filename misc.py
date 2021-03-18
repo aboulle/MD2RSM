@@ -247,7 +247,7 @@ def arb_scan(data, x0, y0, x1, y1, step, width):
 		xs, ys = np.linspace(x0+dx, x1+dx, length), np.linspace(y0-dy, y1-dy, length)
 		# if w == w_range.min():
 		# 	min_coords = np.array[[][]]
-	
+
 	xs, ys = np.linspace(x0, x1, length), np.linspace(y0, y1, length)
 	scan = data[xs.astype(np.int), ys.astype(np.int)]
 
@@ -257,6 +257,3 @@ def arb_scan(data, x0, y0, x1, y1, step, width):
 	# ymax = y0 - int(np.round(width * np.sin(angle)))
 
 	return scan#, [xmin, xmax], [ymin,ymax]
-
-def new_func(dy, dx):
-     print(dy, dx)
